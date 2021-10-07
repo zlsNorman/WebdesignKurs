@@ -18,18 +18,19 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* 	background: var(--blue); */
       }
       html {
         font-size: 1rem;
         font-family: verdana, sans-serif;
-        overflow-x: hidden;
-        overflow-y: scroll;
+        overflow: hidden;
+        
+      }
+      main{
+        height: 100vh;
+        overflow: scroll;
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
-      }
-      body{
-        scroll-behavior: smooth;
+        overflow-x: hidden;
       }
       .clearfix::after {
         content: "";
@@ -46,7 +47,6 @@
       }
       article {
         height: 100vh;
-
         display: flex;
         position: relative;
         scroll-snap-align: center;
@@ -160,45 +160,62 @@
     border-radius: 50%;
     overflow: hidden;
     }
-
+    .second{
+      background: white;
+    }
+    main > :nth-child(2){
+      background-color: #1C53B0;
+    }
     </style>
   </head>
   <body>
-    <article>
-      <div class="wrapper">
-        <div class="test">
-          <h1><span>Wilkommen</span> auf<br />Schloss Schwepnitz</h1>
-      <div class="yolo">
-        <p>
-        Helfen Sie mit einer Spende beim <br />
-        Wiederaufbau
-        </p>
+    <main>
+      <article>
+        <div class="wrapper">
+          <div class="test">
+            <h1><span>Wilkommen</span> auf<br />Schloss Schwepnitz</h1>
+        <div class="yolo">
+          <p>
+          Helfen Sie mit einer Spende beim <br />
+          Wiederaufbau
+          </p>
 
-        <button>Spenden</button>
-      </div>
+          <button>Spenden</button>
         </div>
-      </div>
-    <div class="bubble-content">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-      <!-- <div class="color-shema"></div> -->
-      <div class="bigBubble"></div>
-      <div class="bigBubble2"></div>
-      <div class="shiny"></div>
-      <img
-        class="background-img"
-        src="img/Header/schlossSWtest.jpg"
-      />
-  </article>
-  <article class="second">
+          </div>
+        </div>
+        <div class="bubble-content">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- <div class="color-shema"></div> -->
+        <div class="bigBubble"></div>
+        <div class="bigBubble2"></div>
+        <div class="shiny"></div>
+        <img
+          class="background-img"
+          src="img/Header/schlossSWtest.jpg"
+        />
+    </article>
+    <article class="second">
 
-  </article>
-  <article class="second">
+    </article>
+    <article class="second">
 
-  </article>
-  </body>
+    </article>
+    <article class="second">
+
+    </article>
+    <article class="second">
+
+    </article>
+    <article class="second">
+
+    </article>
+
+    </body>
+</main>
 </html>
