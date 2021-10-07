@@ -24,7 +24,11 @@
         font-size: 1rem;
         font-family: verdana, sans-serif;
         overflow-x: hidden;
-        overflow-y: hidden;
+        scroll-snap-type: y mandatory;
+        
+      }
+      body{
+        scroll-behavior: smooth;
       }
       .clearfix::after {
         content: "";
@@ -39,11 +43,12 @@
       main {
         display: block;
       }
-      body {
+      article {
         height: 100vh;
 
         display: flex;
         position: relative;
+        scroll-snap-align: center;
       }
       img {
         object-fit: cover;
@@ -154,36 +159,45 @@
     border-radius: 50%;
     overflow: hidden;
     }
+
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="test">
-        <h1><span>Wilkommen</span> auf<br />Schloss Schwepnitz</h1>
-		<div class="yolo">
-			<p>
-			Helfen Sie mit einer Spende beim <br />
-			Wiederaufbau
-			</p>
+    <article>
+      <div class="wrapper">
+        <div class="test">
+          <h1><span>Wilkommen</span> auf<br />Schloss Schwepnitz</h1>
+      <div class="yolo">
+        <p>
+        Helfen Sie mit einer Spende beim <br />
+        Wiederaufbau
+        </p>
 
-			<button>Spenden</button>
-		</div>
+        <button>Spenden</button>
       </div>
+        </div>
+      </div>
+    <div class="bubble-content">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-	<div class="bubble-content">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-    <!-- <div class="color-shema"></div> -->
-    <div class="bigBubble"></div>
-    <div class="bigBubble2"></div>
-    <div class="shiny"></div>
-    <img
-      class="background-img"
-      src="img/Header/schlossSWtest.jpg"
-    />
+      <!-- <div class="color-shema"></div> -->
+      <div class="bigBubble"></div>
+      <div class="bigBubble2"></div>
+      <div class="shiny"></div>
+      <img
+        class="background-img"
+        src="img/Header/schlossSWtest.jpg"
+      />
+  </article>
+  <article class="second">
+
+  </article>
+  <article class="second">
+
+  </article>
   </body>
 </html>
