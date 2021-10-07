@@ -23,6 +23,8 @@
       html {
         font-size: 1rem;
         font-family: verdana, sans-serif;
+        overflow-x: hidden;
+        overflow-y: hidden;
       }
       .clearfix::after {
         content: "";
@@ -46,7 +48,7 @@
       img {
         object-fit: cover;
         object-position: left;
-        opacity: 0.8;
+        opacity: 0.85;
       }
 
       span {
@@ -127,6 +129,30 @@
 		  gap: 1rem;
 		  margin-left: 5rem;
 	  }
+    .bigBubble{
+      height: 50rem;
+      width: 50rem;
+      background-color: #e28924;
+      position: absolute;
+      top: 53%;
+      right: -25%;
+      mix-blend-mode: multiply;
+      z-index: 1;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .bigBubble2{
+      height: 25rem;
+    width: 25rem;
+    background-color: #1C53B0;
+    position: absolute;
+    top: 31%;
+    right: -17%;
+    mix-blend-mode: multiply;
+    z-index: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    }
     </style>
   </head>
   <body>
@@ -151,10 +177,12 @@
 		<div></div>
 	</div>
     <!-- <div class="color-shema"></div> -->
+    <div class="bigBubble"></div>
+    <div class="bigBubble2"></div>
     <div class="shiny"></div>
     <img
       class="background-img"
-      src="/img/Header/schlossSWtest.jpg"
+      src="img/Header/schlossSWtest.jpg"
     />
   </body>
 </html>
