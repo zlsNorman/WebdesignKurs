@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>meine erste Seite</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <!--nimmt ihn aus der Suchdatenbank-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      :root {
+        --blue: #1e90ff;
+        --white: #ffffff;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 1rem;
+        font-family: verdana, sans-serif;
+        overflow: hidden;
+        
+      }
+      main{
+        height: 100vh;
+        overflow: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      main {
+        display: block;
+      }
+      article {
+        height: 100vh;
+        display: flex;
+        position: relative;
+        scroll-snap-align: center;
+      }
+      img {
+        object-fit: cover;
+        object-position: left;
+        opacity: 0.85;
+      }
+
+      span {
+        color: #e28924;
+      }
+      p {
+        font-size: 25px;
+      }
+      button {
+        border-radius: 15px;
+        color: black;
+        background-color: white;
+        padding: 0.7rem 1rem;
+        width: 10rem;
+        border:none;
+      }
+      .shiny {
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        top: 0%;
+        background-image: linear-gradient(to bottom, white, transparent);
+        z-index: 5;
+        opacity: 0.2;
+      }
+      .color-shema {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: #e28924;
+        mix-blend-mode: multiply;
+        z-index: 1;
+      }
+      .test {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .test h1 {
+        color: white;
+        font-size: 54px;
+        font-size:clamp(45px, 54px, 60px);
+      }
+      .wrapper {
+        max-width: 1400px;
+        margin: auto;
+      }
+	  .bubble-content{
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		position: absolute;
+		z-index: 5;
+		left: 5%;
+		top: 50%;
+		transform: translate(0% ,-50%);
+		
+
+	  }
+	  .bubble-content div{
+		  padding: 1rem;
+		  background-color:white;
+		  border-radius: 50%;
+		  overflow: hidden;
+		  margin: auto;
+		 
+	  }
+	  .bubble-content div:nth-child(1){
+		padding: 1.5rem;
+	  }
+	  .yolo{
+		  display: flex;
+		  flex-direction: column;
+		  gap: 1rem;
+		  margin-left: 5rem;
+	  }
+    .bigBubble{
+      height: 50rem;
+      width: 50rem;
+      background-color: #e28924;
+      position: absolute;
+      top: 53%;
+      right: -25%;
+      mix-blend-mode: multiply;
+      z-index: 1;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .bigBubble2{
+      height: 25rem;
+    width: 25rem;
+    background-color: #1C53B0;
+    position: absolute;
+    top: 31%;
+    right: -17%;
+    mix-blend-mode: multiply;
+    z-index: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    }
+    .second{
+      background: white;
+    }
+    main > :nth-child(2){
+      background-color: #1C53B0;
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="wrapper">
+          <div class="test">
+            <h1><span>Wilkommen</span> auf<br />Schloss Schwepnitz</h1>
+        <div class="yolo">
+          <p>
+          Helfen Sie mit einer Spende beim <br />
+          Wiederaufbau
+          </p>
+
+          <button>Spenden</button>
+        </div>
+          </div>
+        </div>
+        <div class="bubble-content">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- <div class="color-shema"></div> -->
+        <div class="bigBubble"></div>
+        <div class="bigBubble2"></div>
+        <div class="shiny"></div>
+        <img
+          class="background-img"
+          src="img/Header/schlossSWtest.jpg"
+        />
+    </article>
+    <article class="second">
+
+    </article>
+    <article class="second">
+
+    </article>
+    <article class="second">
+
+    </article>
+    <article class="second">
+
+    </article>
+    <article class="second">
+
+    </article>
+
+    </body>
+</main>
+</html>
