@@ -119,6 +119,7 @@ header {
   position: relative;
   height: 100vh;
   display: flex;
+  scroll-snap-align: center;
 }
 svg {
   position: absolute;
@@ -129,10 +130,27 @@ main{
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 article{
     height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+    position: relative;
+    background-color: white;
 }
-.wordColorBlue{
+p{
+  font: var(--text);
+  color: var(--black);
+}
+.wordColorKontrastOne{
+  color: var(--kontrastOne);
+}
+
+.wordColorKontrastTwo{
     color: var(--kontrastTwo);
+}
+.textWhite{
+  color: var(--white);
 }
