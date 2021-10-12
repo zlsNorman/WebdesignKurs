@@ -138,7 +138,6 @@ article{
     width: 100%;
     scroll-snap-align: center;
     position: relative;
-    background-color: var(--white);
     display: flex;
 }
 p{
@@ -156,4 +155,19 @@ p{
 .textWhite p
 {
   color: var(--white);
+}
+.completeMultiplyBlue {
+  mix-blend-mode: multiply;
+  background-color: var(--kontrastOne);
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+.completeWhite {
+  background-color: var(--white);
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
 }
