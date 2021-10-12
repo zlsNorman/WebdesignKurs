@@ -115,7 +115,7 @@
 /* allgemein */
 /* Desktop */
 .noMobile {
-  display: none;
+  display: none !important;
 }
 .wrapper {
   max-width: 320px;
@@ -253,3 +253,55 @@ header {
 
 /* Header ENDS*/
 /* Geschichte */
+#history{
+  background-color: transparent;
+}
+.completeMultiplyBlue {
+  mix-blend-mode: multiply;
+  background-color: var(--kontrastOne);
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+.pocketWatch {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    max-width: 75vh;
+    transform: translate(50% , 36%);
+}
+
+.timeline{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+#timelineValue{
+  font: var(--button);
+  font-size: 40px;
+}
+.timeline .dreieck{
+  width: 10vw;
+}
+.timeline .dreieck:last-of-type{
+  transform: rotate( 
+    180deg);
+}
+.textBlock{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2rem;
+}
+/* Allgemein */
+.disable {
+  visibility: hidden;
+  pointer-events: none;
+}

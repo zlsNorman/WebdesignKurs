@@ -121,7 +121,7 @@ header {
   display: flex;
   scroll-snap-align: center;
 }
-svg {
+svg.headCirlces {
   position: absolute;
   z-index: 1;
 }
@@ -138,7 +138,8 @@ article{
     width: 100%;
     scroll-snap-align: center;
     position: relative;
-    background-color: white;
+    background-color: var(--white);
+    display: flex;
 }
 p{
   font: var(--text);
@@ -151,6 +152,8 @@ p{
 .wordColorKontrastTwo{
     color: var(--kontrastTwo);
 }
-.textWhite{
+.textWhite,
+.textWhite p
+{
   color: var(--white);
 }
