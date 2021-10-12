@@ -96,15 +96,19 @@ function getRotationDegrees(obj) {
       var b = values[1];
       var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
   } else { var angle = 0; }
-  return (angle < 0) ? angle + 360 : angle;
+  return angle /* (angle < 0) ? angle + 360 : angle */;
 }
 
 if(window.matchMedia("(min-width: 701px)")){
   setInterval(function(){ 
     //this code runs every second 
     var angle1 = getRotationDegrees($('.pocketZeiger'));
-    console.log(angle1);
-    $('.pocketZeiger').css('transform','rotate('+ parseInt(angle1+1) +'deg)')
+    /* console.log(angle1); */
+    if(angle1 != 125){
+      $('.pocketZeiger').css('transform','rotate('+ parseInt(angle1+1) +'deg)')
+    }else{
+      $('.pocketZeiger').css('transform','rotate('+ -50 +'deg)')
+    }
   }, 1000);
   
 }

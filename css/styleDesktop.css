@@ -281,9 +281,9 @@ header .headCirlces:last-of-type {
 .pocketZeiger{
   z-index: -2;
   position: absolute;
-  right: 18vw;
-  bottom: 0vw;
-  width: 8vw;
+  right: 17.6vw;
+  bottom: -0.7vw;
+  width: 10vw;
   transform: rotate(
 0deg);
   transform-origin: bottom right;
