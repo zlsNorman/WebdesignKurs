@@ -278,7 +278,16 @@ header .headCirlces:last-of-type {
   transform: translate(10% , 38%) rotate(
 -34deg);
 }
-
+.pocketZeiger{
+  z-index: -2;
+  position: absolute;
+  right: 18vw;
+  bottom: 0vw;
+  width: 8vw;
+  transform: rotate(
+0deg);
+  transform-origin: bottom right;
+}
 
 /* Allgemein */
 
