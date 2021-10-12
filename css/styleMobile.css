@@ -326,7 +326,7 @@ header {
   mix-blend-mode: multiply;
   width: 102vw;
   position: absolute;
-  top: -1px;
+  top: 0px;
 /*   transform: rotate(180deg); */
 }
 /* Allgemein */
