@@ -143,6 +143,7 @@ article{
 p{
   font: var(--text);
   color: var(--black);
+  line-height: 1.5rem;
 }
 .wordColorKontrastOne{
   color: var(--kontrastOne);
