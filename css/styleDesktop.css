@@ -325,14 +325,6 @@ header .headCirlces:last-of-type {
   overflow: visible;
   height: 0;
 }
-#Circle3 {
-  z-index: 0;
-  transform: rotate(180deg);
-  position: absolute;
-  width: 35vw;
-  bottom: 0;
-  right: 0;
-}
 
 /* Allgemein */
 
@@ -361,10 +353,10 @@ header .headCirlces:last-of-type {
 
 
 #Circle3 {
-  width: 80vw;
+  width: 85vw;
   position: absolute;
-  right: -40vw;
-  bottom: -75vh;
+  right: -45vw;
+  bottom: -80vh;
 
   -webkit-animation-name: rotate;
   -moz-animation-name: rotate;
