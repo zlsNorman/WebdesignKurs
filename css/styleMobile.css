@@ -182,21 +182,31 @@ nav:before {
   background-color: var(--white);
   border-radius: 0 0 0px 15px;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 }
-.burger a {
-  color: var(--black);
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  display: block;
-  transition: 1s;
-  font-size: 2rem;
-}
-
+  .burger a {
+    color: var(--black);
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: 1s;
+    font-size: 2rem;
+  }
+  .menuOpen{
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--black);
+    opacity: 0.3;
+  }
 header {
   align-items: flex-end;
 }
@@ -210,15 +220,6 @@ header {
   left: 0;
   z-index: -1;
   opacity: 0.85;
-}
-.colorSheme {
-  z-index: 0;
-  top: 0;
-  position: absolute;
-  height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(to bottom, white, transparent);
-  opacity: 0.25;
 }
 .completeMultiply {
   mix-blend-mode: multiply;

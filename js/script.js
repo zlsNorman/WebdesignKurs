@@ -45,45 +45,53 @@ function navBar(){
     };
   }
 }
-$("main").scroll(()=>{
-  navBar();
-});
-
-$(".burger").click(()=>{
+function onclickEvents(){
+  $(".burger").click(()=>{
+      $("nav").fadeToggle()
+      $(".menuOpen").fadeToggle()
+      /* $(".burger a").toggleClass("rotate45") */
+      $(".burger").toggleClass("is-active")
+  });
+  $("nav > ul > li > a").click(()=>{
     $("nav").fadeToggle()
-    $(".burger a").toggleClass("rotate45")
-});
-
-$(".dreieck").on('click', function() {
-  var dreieckId = $(this).attr('id');
-  var timelineValue = $("#timelineValue").html();
-  var trueValue
-  for(i=0; i < timelines.length; i++){
-    if(dreieckId == "dreieckTop" && timelineValue == timelines[i]){
-      trueValue = i-1;
-      $("#timelineValue").html(timelines[trueValue]);
-      $(".timelineText p").html(timelinesText[trueValue]);
+    $(".menuOpen").fadeToggle()
+    /* $(".burger a").toggleClass("rotate45") */
+    $(".burger").toggleClass("is-active")
+  });
+  $(".menuOpen").click(()=>{
+    $("nav").fadeToggle()
+    $(".menuOpen").fadeToggle()
+    /* $(".burger a").toggleClass("rotate45") */
+    $(".burger").toggleClass("is-active")
+  });
+  $(".dreieck").on('click', function() {
+    var dreieckId = $(this).attr('id');
+    var timelineValue = $("#timelineValue").html();
+    var trueValue
+    for(i=0; i < timelines.length; i++){
+      if(dreieckId == "dreieckTop" && timelineValue == timelines[i]){
+        trueValue = i-1;
+        $("#timelineValue").html(timelines[trueValue]);
+        $(".timelineText p").html(timelinesText[trueValue]);
+      }
+      else if(dreieckId == "dreieckBot" && timelineValue == timelines[i]){
+        trueValue = i+1;
+        $("#timelineValue").html(timelines[trueValue]);
+        $(".timelineText p").html(timelinesText[trueValue]);
+      }
+      
+      if($("#timelineValue").html()==timelines[0]){
+        $("#dreieckTop polygon").addClass("disable")
+      }else if($("#timelineValue").html()==timelines[3]){
+        $("#dreieckBot polygon").addClass("disable")
+      }
+      else{
+        $(".dreieck polygon").removeClass("disable")
+      }
+      
     }
-    else if(dreieckId == "dreieckBot" && timelineValue == timelines[i]){
-      trueValue = i+1;
-      $("#timelineValue").html(timelines[trueValue]);
-      $(".timelineText p").html(timelinesText[trueValue]);
-    }
-    
-    if($("#timelineValue").html()==timelines[0]){
-      $("#dreieckTop polygon").addClass("disable")
-    }else if($("#timelineValue").html()==timelines[3]){
-      $("#dreieckBot polygon").addClass("disable")
-    }
-    else{
-      $(".dreieck polygon").removeClass("disable")
-    }
-    
-  }
-});
-
-
-
+  });
+}
 function getRotationDegrees(obj) {
   var matrix = obj.css("-webkit-transform") ||
   obj.css("-moz-transform")    ||
@@ -98,6 +106,14 @@ function getRotationDegrees(obj) {
   } else { var angle = 0; }
   return angle /* (angle < 0) ? angle + 360 : angle */;
 }
+
+$("main").scroll(()=>{
+  navBar();
+});
+onclickEvents();
+
+
+
 
 if(window.matchMedia("(min-width: 701px)")){
   setInterval(function(){ 

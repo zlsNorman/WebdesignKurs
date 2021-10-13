@@ -190,15 +190,7 @@ nav ul li a{
   left: 0;
   z-index: -1;
 }
-.colorSheme {
-  z-index: 0;
-  top: 0;
-  position: absolute;
-  height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(to bottom, var(--pureWhite), transparent);
-  opacity: 0.25;
-}
+
 .headerTextBlock {
   margin-top: auto;
   margin-bottom: 15rem;

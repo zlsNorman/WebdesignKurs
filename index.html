@@ -5,13 +5,21 @@
         <meta charset="utf-8">
         <meta name="robots" content="noindex">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="css/hamburgers.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/styleDesktop.css" media="(min-width:701px)">
         <link rel="stylesheet" href="css/styleMobile.css" media="(max-width:700px)">
-        <link rel="stylesheet" href="css/style.css">
+        
     </head>
     <main>
         <header id="home">
-            <div class="noDesktop burger"><a href="#">+</a></div>
+            <!-- <div class="noDesktop burger"><a href="#">+</a></div> -->
+            <button class="burger noDesktop hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="menuOpen"></div>
             <nav>      
                 <ul class="noDesktop">
                     <li><a href="#home">Home</a></li>
@@ -60,8 +68,18 @@
                         <li class="navCircles"><div class="dot"><a href="#" aria-label="go to..."></a></div></li>
                     </ul>
                 </nav>
-                <img class="pocketWatch noMobile" src="img/pocketWatchComFree/pocketWatch50percWithoutZeigerComp.png" srcset="img/pocketWatchComFree/pocketWatch50percWithoutZeigerComp.png 908w,
-                img/pocketWatchComFree/pocketWatch50percWithoutZeigerComp.png 1816w" alt="" aria-hidden="true">
+                <!-- <img class="pocketWatch noMobile" src="img/pocketWatchComFree/pocketWatch50percWithoutZeigerComp.png" srcset="img/pocketWatchComFree/pocketWatch50percWithoutZeigerComp.png 908w,
+                img/pocketWatchComFree/pocketWatchWithoutZeigerComp.png 1816w" alt="" aria-hidden="true"> -->
+                <img  
+                class="pocketWatch noMobile"
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                srcset="
+                img/pocketWatchComFree/pocketWatchWithoutZeigerComp_nz8hji/pocketWatchWithoutZeigerComp_nz8hji_c_scale,w_310.png 310w,
+                img/pocketWatchComFree/pocketWatchWithoutZeigerComp_nz8hji/pocketWatchWithoutZeigerComp_nz8hji_c_scale,w_915.png 915w,
+                img/pocketWatchComFree/pocketWatchWithoutZeigerComp_nz8hji/pocketWatchWithoutZeigerComp_nz8hji_c_scale,w_1304.png 1304w,
+                img/pocketWatchComFree/pocketWatchWithoutZeigerComp_nz8hji/pocketWatchWithoutZeigerComp_nz8hji_c_scale,w_1816.png 1816w"
+                src="img/pocketWatchComFree/pocketWatchWithoutZeigerComp_nz8hji/pocketWatchWithoutZeigerComp_nz8hji_c_scale,w_1816.png"
+                alt="" aria-hidden="true">
                 <img class="pocketZeiger noMobile" src="img/pocketWatchComFree/pocketWatchZeigerComp.png" alt="" aria-hidden="true">
                 <img class="pocketWatch noDesktop" src="img/pocketWatchComFree/pocketWatchmodernComp.png" alt="" aria-hidden="true">
                 <div class="completeMultiplyBlue"></div>
