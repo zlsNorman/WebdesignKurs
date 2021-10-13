@@ -157,6 +157,15 @@ p{
 {
   color: var(--white);
 }
+.colorSheme {
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, var(--pureWhite), transparent);
+  opacity: 0.25;
+}
 .completeMultiplyBlue {
   mix-blend-mode: multiply;
   background-color: var(--kontrastOne);
@@ -172,3 +181,5 @@ p{
   z-index: -1;
   position: absolute;
 }
+
+
