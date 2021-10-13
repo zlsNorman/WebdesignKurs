@@ -181,5 +181,10 @@ p{
   z-index: -1;
   position: absolute;
 }
-
+.headTwoBig{
+  font: var(--headTwoBig);
+}
+.headTwo{
+  font: var(--headTwo);
+}
 

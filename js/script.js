@@ -25,6 +25,15 @@ var timelinesText = [
   genutzt.`,
   `Nach einem Brand 1996 ist das Schloss nur noch als Ruine erhalten.`
 ];
+var zielIcons =[
+  ['Cafee',`Caffee ipsum dolor sit  praesentium eius tenetur aliqu amet consectetur adipisicing elit. Odit, molestiae aliquam. Unde quo inid culpa deleniti!`],
+  ['Bett',`Nach dem Wiederaufbau und Sanierung soll das Schwepnitzer Schloss als Pension etabliert werden...`],
+  ['Treff',`Treff dolor sit amet consectetur adipisicing elit. Odit, molestiae aliquam. Unde quo in praesentium eius tenetur aliquid culpa deleniti!`],
+  ['Spende',`Spende ipsum dolor sit amet consectetur adipisicing elit. Odit, molestiae aliquam. Unde quo in praesentium  praesentium eius tenetur aliqu eius tenetur aliquid culpa deleniti!`]
+];
+
+
+
 
 if($(document).scrollTop() == 0){
   $(".navCircles:first-of-type div").addClass("blueDot");
@@ -32,13 +41,17 @@ if($(document).scrollTop() == 0){
 function navBar(){
   var menu = [
     '#home',
-    '#history'
+    '#history',
+    '#person',
+/*     '#spenden',
+    '#galerie',
+    '#questions' */
   ];
   for(i=0;i<menu.length;i++){
-    var objectPosition = $(menu[i]).offset().top;
-    var objectPositionEnd = $(window).innerHeight() + objectPosition ;
-    var scrollPosition = $("main").scrollTop();
-    if(objectPosition <= scrollPosition && scrollPosition <= objectPositionEnd){
+    var windowHight = $(window).innerHeight();
+    var halfWindowHight = $(window).innerHeight()/2;
+    var objectPosition = $(menu[i]).position().top;
+    if(objectPosition+halfWindowHight < windowHight &&  objectPosition >= -halfWindowHight){
       $('.navCircles [href="'+menu[i]+'"]').parent().addClass("blueDot");
     }else{
       $('.navCircles [href="'+menu[i]+'"]').parent().removeClass("blueDot");
@@ -52,7 +65,7 @@ function onclickEvents(){
       /* $(".burger a").toggleClass("rotate45") */
       $(".burger").toggleClass("is-active")
   });
-  $("nav > ul > li > a").click(()=>{
+  $(".headerNav nav > ul > li > a").click(()=>{
     $("nav").fadeToggle()
     $(".menuOpen").fadeToggle()
     /* $(".burger a").toggleClass("rotate45") */
@@ -91,6 +104,14 @@ function onclickEvents(){
       
     }
   });
+  $(".zielIcons a").on('click', function() {
+    $(".zielIcons a").removeClass("iconActive");
+    $(this).addClass("iconActive");
+    var icon = $(this).attr("data-id");
+    console.log(icon-1);
+    $(".zieleText p").html(zielIcons[icon-1][1]);
+
+  })
 }
 function getRotationDegrees(obj) {
   var matrix = obj.css("-webkit-transform") ||
@@ -114,7 +135,6 @@ onclickEvents();
 
 
 
-
 if(window.matchMedia("(min-width: 701px)")){
   setInterval(function(){ 
     //this code runs every second 
@@ -128,3 +148,6 @@ if(window.matchMedia("(min-width: 701px)")){
   }, 1000);
   
 }
+
+/* new CircleType(document.getElementById('auto_radius'));
+ */
