@@ -360,31 +360,11 @@ header .headCirlces:last-of-type {
 
 
 
-
-/* circle svg */
-#container {
-  margin: 0%;
-  z-index: 2;
+#Circle3 {
+  width: 80vw;
   position: absolute;
-  left: 8vw;
-  top: -42vw;
-}
-
-#circle text {
-  font-family: "Merriweather", Arial;
-  font-size: 0.2vw;
-  font-weight: bold;
-  pointer-events: none;
-}
-
-#circle svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 540px;
-  width: 370vh;
-  height: 370vh;
+  right: -40vw;
+  bottom: -75vh;
 
   -webkit-animation-name: rotate;
   -moz-animation-name: rotate;

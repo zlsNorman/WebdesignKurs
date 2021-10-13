@@ -148,6 +148,3 @@ if(window.matchMedia("(min-width: 701px)")){
   }, 1000);
   
 }
-
-/* new CircleType(document.getElementById('auto_radius'));
- */
