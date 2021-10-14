@@ -486,3 +486,94 @@ header .headCirlces:last-of-type {
     transform: rotate(0);
   }
 }
+/* SpinningCoin */
+
+#spinningCoin {
+  display: block;
+  width: 25vw;
+  height: 25vw;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  animation: turn 5s infinite linear;
+  margin: auto;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+
+}
+  #spinningCoin img{
+    width: 100%;
+  }
+  .coin{
+      display: block;
+      position: absolute;
+      width: 95%;
+      height: 95%;
+      -webkit-transform-style: preserve-3d;
+      background:radial-gradient(#d5d7d7,#d5d7d7,black);
+      border-radius:50%;
+      border:5px solid #d5d7d7; 
+  }
+
+  #child {
+
+      -webkit-transform: translateZ(0px);
+  }
+
+  #child:after{
+    content: '';
+    position: absolute;
+    background: rgb(25 25 25 / 52%);
+    width: 200px;
+    height: 20px;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(25 25 25 / 52%);
+  }
+
+  #child1 {
+      -webkit-transform: translateZ(-10px);
+  }
+
+  #child2 {
+      -webkit-transform: translateZ(-5px);
+
+  }
+
+  #child3 {
+      -webkit-transform: translateZ(-2px);
+  }
+
+  #child4 {
+      -webkit-transform: translateZ(-8px);
+  }
+
+  #child5 {
+      -webkit-transform: translateZ(-12px);
+  }
+
+  #child6 {
+      -webkit-transform: translateZ(-14px);
+  }
+
+  #child7 {
+      -webkit-transform: translateZ(-16px);
+  }
+
+  #child8 {
+      -webkit-transform: translateZ(-18px);
+  }
+
+
+
+  
+  @keyframes turn{
+      0%{
+      transform: rotateY(-180deg);
+      }
+      100%{
+      transform: rotateY(180deg);
+      }
+  }
