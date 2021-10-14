@@ -140,9 +140,6 @@
   max-width: 320px;
   margin: auto;
 }
-article{
-  min-height: 100vh;
-}
 nav {
   display: none;
   position: fixed;
@@ -326,7 +323,7 @@ header {
 .mobileTextblockFix{
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -339,7 +336,8 @@ section.textBlock{
   height: 8rem;
 }
 .zielIcons {
-  gap: 0.5rem;
+  gap: 1rem;
+  justify-content: center;
   display: flex;
   align-items: center;
   height: 5rem;
