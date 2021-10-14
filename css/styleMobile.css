@@ -320,11 +320,17 @@ header {
 }
 
 /* Person */
+#person{
+  height: fit-content;
+}
+#person.completeMultiplyBlue{
+  height: 100%;
+}
 .mobileTextblockFix{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: auto;
+  margin-top: 30%;
   margin-bottom: auto;
 }
 section.textBlock{
