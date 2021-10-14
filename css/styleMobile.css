@@ -140,6 +140,9 @@
   max-width: 320px;
   margin: auto;
 }
+article{
+  min-height: 100vh;
+}
 nav {
   display: none;
   position: fixed;

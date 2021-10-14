@@ -134,6 +134,7 @@ main{
 article {
   background-color: var(--white);
   scroll-snap-align: center;
+  height: 100vh;
 }
 
 .wrapper {
