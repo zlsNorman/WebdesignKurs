@@ -43,8 +43,8 @@ function navBar(){
     '#home',
     '#history',
     '#person',
-/*     '#spenden',
-    '#galerie',
+    '#spenden',
+/*    '#galerie',
     '#questions' */
   ];
   for(i=0;i<menu.length;i++){

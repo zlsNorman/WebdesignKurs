@@ -172,6 +172,12 @@ p{
   z-index: -1;
   position: absolute;
 }
+.completeBlue {
+  background-color: var(--kontrastOne);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
 .completeWhite {
   background-color: var(--white);
   height: 100vh;
@@ -185,4 +191,6 @@ p{
 .headTwo{
   font: var(--headTwo);
 }
-
+.einRem{
+  margin-bottom: 1rem;
+}

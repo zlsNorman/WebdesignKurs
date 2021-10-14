@@ -323,7 +323,7 @@ header .headCirlces:last-of-type {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 40vw;
+  width: 30vw;
   margin-left: 5vw;
 }
 .zieleText {
@@ -331,6 +331,58 @@ header .headCirlces:last-of-type {
   height: 0;
 }
 
+/* Spenden */
+
+#spenden{
+  background-color: var(--kontrastOne);
+}
+
+.texteSpenden{
+  margin: 2vw 8vw;
+  padding: 2vw;
+  background-color: var(--white);
+  display: flex;
+  gap: 1rem;
+}
+.texteSpenden div{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.texteSpenden h2{
+  margin-bottom: 1rem;
+}
+
+.spendenAktion img{
+  width: calc(100% - 20vw);
+}
+.bankdaten span:first-of-type{
+  color: #000;
+  font-family: "arial";
+  font-weight: 600;
+}
+
+.textBlockSpenden{
+  flex-basis: 50%;
+}
+.spendenDaten{
+  display: flex;
+  gap:1rem;
+  flex-direction: column;
+}
+.spendenDaten p,
+.spendenAktion p,
+.spendenAktion img{
+  margin-left: 5vw;
+}
+.spendenDaten > :first-child,
+.spendenAktion > :first-child{
+  flex-basis: 50%;
+}
+.spendenDaten > :last-child,
+.spendenAktion > :last-child{
+   flex-basis: 50%;
+}
 /* Allgemein */
 
 .textBlock {
