@@ -123,7 +123,7 @@
   --headTwoBig: 700 40px "Merriweather";
   --headTree: 700 23px "Merriweather";
   --headerLetter: 400 22 px "Merriweather";
-  --text: 400 18px "Merriweather";
+  --text: 400 16px "Merriweather";
   --button: 400 20px "EB Garamond";
   --menuText: 400 40px "EB Garamond";
 }
@@ -334,6 +334,7 @@ section.textBlock{
 .zieleText {
   overflow: visible;
   height: 8rem;
+  z-index: 1;
 }
 .zielIcons {
   gap: 1rem;
@@ -358,6 +359,18 @@ section.textBlock{
 .zielIcons a.iconActive {
   border: 5px solid var(--kontrastTwo);
   margin: 0;
+}
+#Sniggle{
+  position: absolute;
+  bottom: 0;
+  transform: translate(0,72%);
+}
+
+
+/* Spenden */
+#spenden{
+    background-color: var(--white);
+    z-index: -1;
 }
 
 /* Allgemein */
