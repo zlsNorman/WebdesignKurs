@@ -332,6 +332,7 @@ header {
   gap: 1rem;
   margin-top: 30%;
   margin-bottom: auto;
+  background-color: var(--white);
 }
 section.textBlock{
   margin-top: 0;
@@ -369,7 +370,7 @@ section.textBlock{
 #Sniggle{
   position: absolute;
   bottom: 0;
-  transform: translate(0,72%);
+  transform: translate(0,100%);
 }
 
 
