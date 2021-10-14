@@ -128,8 +128,13 @@
 }
 
 /* Desktop */
+main{
+  scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
 article {
   background-color: var(--white);
+  scroll-snap-align: center;
 }
 
 .wrapper {
