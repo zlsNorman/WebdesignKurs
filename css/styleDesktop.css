@@ -490,7 +490,7 @@ header .headCirlces:last-of-type {
 
 #spinningCoin {
   display: block;
-/*   width: 25vw; */
+  min-width: 25vw;
   height: 25vw;
   -webkit-transform-style: preserve-3d;
   -webkit-perspective: 1000px;
@@ -500,7 +500,6 @@ header .headCirlces:last-of-type {
   /* right: 10%;
   top: 30%; */
   flex-grow: 1;
-  width: 100%;
 }
   #spinningCoin img{
     width: 100%;
