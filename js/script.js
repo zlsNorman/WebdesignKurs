@@ -44,8 +44,8 @@ function navBar(){
     '#history',
     '#person',
     '#spenden',
-/*    '#galerie',
-    '#questions' */
+    '#galerie',
+/*    '#questions' */
   ];
   for(i=0;i<menu.length;i++){
     var windowHight = $(window).innerHeight();
