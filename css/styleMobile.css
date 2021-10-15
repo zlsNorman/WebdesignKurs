@@ -388,6 +388,7 @@ section.textBlock{
     z-index: -1;
     margin-top: 30%;
     height: auto;
+    background-color: var(--white);
 }
 .textBlockSpenden{
   display: flex;
