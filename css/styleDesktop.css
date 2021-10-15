@@ -456,8 +456,8 @@ picture img{
 
 .fotorama__stage__frame
 {
-/*   width: auto !important;
-  height: auto !important; */
+  width: auto !important;
+  height: auto !important;
 }
 /* Allgemein */
 
