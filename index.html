@@ -26,6 +26,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/icon/favicons/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        
+        <link  href="/fotorama-4.6.4/fotorama.css" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -196,7 +198,7 @@
                             <li class="navCircles"><div class="dot"><a href="#questions" aria-label="go to..."></a></div></li>
                         </ul>
                     </nav>
-                    <div class="texteSpenden">
+                    <div class="texteSpenden wrapper">
                         <div >
                             <section class="textBlockSpenden">
                                 <h2 class="noMobile headTwo wordColorKontrastOne">Spendeninformation</h2>
@@ -280,7 +282,36 @@
                         </div> -->
                     </div>
                 </article>
-                <article id="#galerie">
+                <article id="galerie">
+                    <nav>      
+                        <ul class="noMobile">
+                            <li class="navCircles"><div class="dot"><a href="#home" aria-label="go to..."></a></div></li>
+                            <li class="navCircles"><div class="dot"><a href="#history" aria-label="go to..."></a></div></li>
+                            <li class="navCircles"><div class="dot"><a href="#person" aria-label="go to..."></a></div></li>
+                            <li class="navCircles"><div class="dot"><a href="#spenden" aria-label="go to..."></a></div></li>
+                            <li class="navCircles"><div class="dot"><a href="#galerie" aria-label="go to..."></a></div></li>
+                            <li class="navCircles"><div class="dot"><a href="#questions" aria-label="go to..."></a></div></li>
+                        </ul>
+                    </nav>
+                    <svg class="noMobile Galerie1" id="Circle-Galerie1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.51 259.51"><defs></defs><circle class="cls-1" cx="129.75" cy="129.75" r="129.75"/></svg>
+                    <svg class="noMobile Galerie2" id="Circle-Galerie2" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.51 259.51"><defs></defs><circle class="cls-1" cx="129.75" cy="129.75" r="129.75"/></svg>
+                    <svg class="noMobile Galerie3" id="Circle-Galerie3" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.51 259.51"><defs></defs><circle class="cls-1" cx="129.75" cy="129.75" r="129.75"/></svg>
+
+                    <div class="galerie">
+                        <div>
+                            <h2 class="headline textWhite">Sie möchten mehr <br>vom aktuellen <br>Zustand sehen?</h2>
+                        </div>
+
+                        <div class="fotorama" data-nav="thumbs" data-thumbwidth="250" data-thumbheight = "250" data-loop="true" data-shuffle="true" data-allowfullscreen="native"data-arrows="false"  data-fit="content" data-swipe="false">
+                            <img src="/img/Galerie/IMG_0231-2-768x512.jpg" alt="">
+                            <img src="/img/Galerie/IMG_0236-2-768x512.jpg" alt="">
+                            <img src="/img/Galerie/IMG_0242-2-768x512.jpg" alt="">
+                            <img src="/img/Galerie/IMG_2678_resize.jpg" alt="">
+                            <img src="/img/Galerie/PHOTO-2019-09-26-08-41-28_resize.jpg" alt="">
+                        </div>
+                    </div>
+                    
+
 
                 </article>
             </main>
@@ -290,6 +321,7 @@
         </body>
         <script src="js/jquery-3.5.1.js"></script>
         <script src="js/script.js"></script>
+        <script src="/fotorama-4.6.4/fotorama.js"></script>
 </html>
 
 <!-- https://codepen.io/gabrielajohnson/pen/pGavJK -->

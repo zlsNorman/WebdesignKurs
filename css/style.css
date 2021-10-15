@@ -194,3 +194,7 @@ p{
 .einRem{
   margin-bottom: 1rem;
 }
+
+#galerie{
+  background-color: var(--kontrastTwo);
+}
