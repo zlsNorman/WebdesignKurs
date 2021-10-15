@@ -345,7 +345,7 @@ header .headCirlces:last-of-type {
   gap: 1rem;
 }
 .texteSpenden div{
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
   display: flex;
   flex-direction: column;
 }
@@ -490,16 +490,17 @@ header .headCirlces:last-of-type {
 
 #spinningCoin {
   display: block;
-  width: 25vw;
+/*   width: 25vw; */
   height: 25vw;
   -webkit-transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   animation: turn 5s infinite linear;
   margin: auto;
-  position: absolute;
-  right: 10%;
-  top: 30%;
-
+/*   position: absolute; */
+  /* right: 10%;
+  top: 30%; */
+  flex-grow: 1;
+  width: 100%;
 }
   #spinningCoin img{
     width: 100%;
@@ -513,6 +514,8 @@ header .headCirlces:last-of-type {
       background:radial-gradient(#d5d7d7,#d5d7d7,black);
       border-radius:50%;
       border:5px solid #d5d7d7; 
+      width: 25vw;
+      height: 25vw;
   }
 
   #child {
