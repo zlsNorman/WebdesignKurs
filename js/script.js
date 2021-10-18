@@ -108,7 +108,6 @@ function onclickEvents(){
     $(".zielIcons a").removeClass("iconActive");
     $(this).addClass("iconActive");
     var icon = $(this).attr("data-id");
-    console.log(icon-1);
     $(".zieleText p").html(zielIcons[icon-1][1]);
 
   })
@@ -139,7 +138,6 @@ if(window.matchMedia("(min-width: 701px)")){
   setInterval(function(){ 
     //this code runs every second 
     var angle1 = getRotationDegrees($('.pocketZeiger'));
-    /* console.log(angle1); */
     if(angle1 != 125){
       $('.pocketZeiger').css('transform','rotate('+ parseInt(angle1+1) +'deg)')
     }else{

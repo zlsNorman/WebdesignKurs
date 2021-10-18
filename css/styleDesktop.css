@@ -511,7 +511,7 @@ form .button{
 }
 
 /* Footer */
-#footer{
+.footer{
   background-color: var(--kontrastTwo);
   height: 7rem;
   position: absolute;
@@ -519,11 +519,11 @@ form .button{
   width: 100vw;
   display: flex;
 }
-#footer a{
+.footer a{
   color: var(--white);
   text-decoration: none;
 }
-#footer span{
+.footer span{
   position: absolute;
   bottom: 0%;
   left: 50%;
