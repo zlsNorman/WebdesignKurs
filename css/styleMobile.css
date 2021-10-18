@@ -149,7 +149,7 @@ nav {
   position: fixed;
   top: 60%;
   left: 50%;
-  z-index: 3;
+  z-index: 5;
   width: 90%;
   transform: translate(-50%, -50%);
   background-color: var(--black);
@@ -525,7 +525,9 @@ picture{
   width: 100vw;
   display: flex;
   align-items: center;
+  padding-bottom: 5rem;
   justify-content: space-between;
+  box-sizing: content-box;
 }
 .footer a{
   color: var(--white);
