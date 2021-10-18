@@ -149,7 +149,7 @@ nav {
   position: fixed;
   top: 60%;
   left: 50%;
-  z-index: 5;
+  z-index: 10;
   width: 90%;
   transform: translate(-50%, -50%);
   background-color: var(--black);
@@ -185,7 +185,7 @@ nav:before {
 .burger {
   background-color: var(--white);
   border-radius: 0 0 0px 15px;
-  z-index: 3;
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
@@ -201,7 +201,7 @@ nav:before {
     font-size: 2rem;
   }
   .menuOpen{
-    z-index: 1;
+    z-index: 9;
     display: none;
     position: fixed;
     top: 0;
@@ -525,7 +525,7 @@ picture{
   width: 100vw;
   display: flex;
   align-items: center;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   justify-content: space-between;
   box-sizing: content-box;
 }

@@ -65,7 +65,7 @@ function onclickEvents(){
       /* $(".burger a").toggleClass("rotate45") */
       $(".burger").toggleClass("is-active")
   });
-  $(".headerNav nav > ul > li > a").click(()=>{
+  $(".headerNav > ul > li > a").click(()=>{
     $("nav").fadeToggle()
     $(".menuOpen").fadeToggle()
     /* $(".burger a").toggleClass("rotate45") */

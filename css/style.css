@@ -238,3 +238,18 @@ p{
 button{
   cursor: pointer;
 }
+
+
+/* Hover */
+.button:hover {
+  color: var(--kontrastTwo);
+}
+
+.navCircles:hover div{
+  background: var(--kontrastTwo);
+  border-radius: 50%;
+}
+
+a:hover{
+  color: var(--kontrastOne);
+}
