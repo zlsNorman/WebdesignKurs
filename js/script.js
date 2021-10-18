@@ -45,7 +45,7 @@ function navBar(){
     '#person',
     '#spenden',
     '#galerie',
-/*    '#questions' */
+    '#questions'
   ];
   for(i=0;i<menu.length;i++){
     var windowHight = $(window).innerHeight();
@@ -148,3 +148,4 @@ if(window.matchMedia("(min-width: 701px)")){
   }, 1000);
   
 }
+
