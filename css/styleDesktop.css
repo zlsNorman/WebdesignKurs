@@ -131,7 +131,8 @@
 /* Desktop */
 main{
   scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
 }
 article {
   background-color: var(--white);
@@ -186,10 +187,12 @@ nav ul li a {
 }
 /* Header */
 .headerImg {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
-  object-position: right;
+  -o-object-position: right;
+     object-position: right;
   transform: scaleX(-1);
   position: absolute;
   top: 0;
@@ -218,6 +221,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   align-items: center;
   gap: 1rem;
@@ -287,6 +291,7 @@ header .headCirlces:last-of-type {
 }
 #person > div {
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
@@ -444,7 +449,8 @@ picture img{
   pointer-events: none;
 }
 .fotorama--fullscreen .fotorama__active .fotorama__img{
-  object-fit: none;
+  -o-object-fit: none;
+     object-fit: none;
 
 }
 
@@ -543,6 +549,7 @@ form .button{
   display: flex;
   gap: 1rem;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   position: absolute;
   top: 50%;
@@ -608,24 +615,12 @@ form .button{
   bottom: -80vh;
 
   -webkit-animation-name: rotate;
-  -moz-animation-name: rotate;
-  -ms-animation-name: rotate;
-  -o-animation-name: rotate;
   animation-name: rotate;
   -webkit-animation-duration: 100s;
-  -moz-animation-duration: 100s;
-  -ms-animation-duration: 100s;
-  -o-animation-duration: 100s;
   animation-duration: 100s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -ms-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 @-webkit-keyframes rotate {
@@ -634,30 +629,6 @@ form .button{
   }
   to {
     -webkit-transform: rotate(0);
-  }
-}
-@-moz-keyframes rotate {
-  from {
-    -moz-transform: rotate(-360deg);
-  }
-  to {
-    -moz-transform: rotate(0);
-  }
-}
-@-ms-keyframes rotate {
-  from {
-    -ms-transform: rotate(-360deg);
-  }
-  to {
-    -ms-transform: rotate(0);
-  }
-}
-@-o-keyframes rotate {
-  from {
-    -o-transform: rotate(-360deg);
-  }
-  to {
-    -o-transform: rotate(0);
   }
 }
 @keyframes rotate {
