@@ -6,12 +6,7 @@
 		<lastmod>2021-10-19</lastmod>
 	</url>
 	<url>
-		<loc>https://www.schloss-schwepnitz/datenschutz.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2021-10-19</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/impressum.html</loc>
+		<loc>https://www.schloss-schwepnitz/internetExplorer.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2021-10-19</lastmod>
 	</url>
@@ -21,22 +16,17 @@
 		<lastmod>2021-09-03</lastmod>
 	</url>
 	<url>
-		<loc>https://www.schloss-schwepnitz/internetExplorer.html</loc>
+		<loc>https://www.schloss-schwepnitz/impressum.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2021-10-19</lastmod>
 	</url>
 	<url>
-		<loc>https://www.schloss-schwepnitz/fotorama-4.6.4/example.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2021-10-15</lastmod>
+		<loc>https://www.schloss-schwepnitz/datenschutz.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2021-10-19</lastmod>
 	</url>
 	<url>
-		<loc>https://www.schloss-schwepnitz/phpform/kontakt.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2021-09-03</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/phpform/phpform_dank.html</loc>
+		<loc>https://www.schloss-schwepnitz/phpform/phpform_mailer.php</loc>
 		<priority>0.33</priority>
 		<lastmod>2021-09-03</lastmod>
 	</url>
@@ -46,8 +36,18 @@
 		<lastmod>2021-09-03</lastmod>
 	</url>
 	<url>
-		<loc>https://www.schloss-schwepnitz/phpform/phpform_mailer.php</loc>
+		<loc>https://www.schloss-schwepnitz/phpform/phpform_dank.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2021-09-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz/phpform/kontakt.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-09-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz/fotorama-4.6.4/example.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-10-15</lastmod>
 	</url>
 </urlset>

@@ -253,3 +253,8 @@ button{
 a:hover{
   color: var(--kontrastOne);
 }
+
+.sepa{
+  color: var(--kontrastOne);
+  z-index: 5;
+}
