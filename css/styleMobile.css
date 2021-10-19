@@ -252,6 +252,7 @@ header {
 .headertext > span {
   display: flex;
   flex-direction: column;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 1rem;
 }
@@ -325,6 +326,7 @@ header {
 
 /* Person */
 #person{
+  height: -moz-fit-content;;
   height: fit-content;
 }
 #person.completeMultiplyBlue{
@@ -552,6 +554,7 @@ picture{
 .sozials{
   display: flex;
   gap: 1rem;
+  height: -moz-fit-content;
   height: fit-content;
   margin-right: 8vw;
 }

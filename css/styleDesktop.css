@@ -217,6 +217,7 @@ nav ul li a {
 .headertext > span {
   display: flex;
   flex-direction: column;
+  width: -moz-fit-content;
   width: fit-content;
   align-items: center;
   gap: 1rem;
@@ -285,6 +286,7 @@ header .headCirlces:last-of-type {
   overflow: hidden;
 }
 #person > div {
+  height: -moz-fit-content;
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
@@ -540,6 +542,7 @@ form .button{
 .sozials{
   display: flex;
   gap: 1rem;
+  height: -moz-fit-content;
   height: fit-content;
   position: absolute;
   top: 50%;
