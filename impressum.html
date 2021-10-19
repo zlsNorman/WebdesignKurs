@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>meine erste Seite</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <!--nimmt ihn aus der Suchdatenbank-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      :root {
+        --blue: #1e90ff;
+        --white: #ffffff;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* 	background: var(--blue); */
+      }
+      html {
+        font-size: 1rem;
+        font-family: verdana, sans-serif;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      main {
+        display: block;
+      }
+
+      .impressum {
+        padding: 0 10% 12vh;
+        font-size: 1rem;
+        color: #194a9d;
+      }
+
+      .impressum h1 {
+        margin-top: 7.5vh;
+        margin-bottom: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+
+      .impressum h2 {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+      }
+
+      .impressum h3 {
+        padding: 1rem 0;
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+      .impressum p {
+        padding: 1rem 0;
+        font-weight: 400;
+      }
+
+      .impressum li {
+        margin-left: 1.25rem;
+        font-weight: 400;
+      }
+      header img {
+        width: 5rem;
+        height: 5rem;
+      }
+      header {
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      header ul {
+        list-style: none;
+        display: flex;
+      }
+      header ul li {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="icon/Logo.svg" alt="" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="impressum">
+      <h2>Verantwortlicher für die Website:</h2>
+      <p>
+        Schloss Schwepnitz e.V.<br />Torsten Winger<br />Dorfstraße 6<br />06386
+        Osternienburg OT Chörau
+      </p>
+      <p>Telefon:<br />034909 709905</p>
+      <p>
+        Mail:<br /><a href="mailto:schloss.schwepnitz@web.de"
+          >schloss.schwepnitz@web.de</a
+        >
+      </p>
+      <p></p>
+    </div>
+  </body>
+</html>

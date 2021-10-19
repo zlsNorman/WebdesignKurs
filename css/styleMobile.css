@@ -582,3 +582,6 @@ picture{
   display: none;
 }
 
+.sepa{
+  color: var(--kontrastOne);
+}

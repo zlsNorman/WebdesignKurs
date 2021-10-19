@@ -23,6 +23,8 @@
         <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicons/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicons/favicon-16x16.png">
         <link rel="manifest" href="/icon/favicons/manifest.json">
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/icon/favicons/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
@@ -236,6 +238,7 @@
                                         Nach Eingang Ihrer Spende senden wir Ihnen ihren Dachziegel zu. Selbstverständlich können Sie von uns eine Spendenquittung erhalten. 
                                         Dachziegel gibts, solange welche vorhanden sind.
                                     </p>
+                                   <p><a class="einRem sepa" href="pdf/SEPA.pdf" target="_blank">SEPA Download</a></p>
                                 </div>
                             </section>
                         </div>
@@ -272,7 +275,7 @@
                             <h2 class="headline textWhite noMobile">Sie möchten mehr <br>vom aktuellen <br>Zustand sehen?</h2>
                             <h2 class="headline textWhite noDesktop">Die Galerie</h2>
                         </div>
-                        <div class="fotorama noMobile "
+                        <div class="fotorama noMobile"
                             data-thumbwidth="100" 
                             data-thumbheight = "100"
                             data-maxheight="100%" 
@@ -290,7 +293,7 @@
                             <img src="/img/Galerie/Photoshop/Galerie9.jpg" data-full="/img/Galerie/g9.jpg" alt="">
                             <img src="/img/Galerie/Photoshop/Galerie10.jpg" data-full="/img/Galerie/g10.jpg.jpg" alt="">
                         </div>
-                        <div class="fotorama noDesktop "
+                        <div class="fotorama noDesktop"
 
                             data-maxheight="100%" 
                             data-width="100%" 
@@ -344,15 +347,14 @@
                         <section>
                             <h3 class="sr-only">Google Map</h3>
                             <div class="responsiveContainer">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1246.4142838671096!2d13.962873489396369!3d51.33267293971676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDE5JzU4LjIiTiAxM8KwNTcnNDcuMSJF!5e0!3m2!1sen!2sde!4v1634548980303!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1246.4142838671096!2d13.962873489396369!3d51.33267293971676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDE5JzU4LjIiTiAxM8KwNTcnNDcuMSJF!5e0!3m2!1sen!2sde!4v1634548980303!5m2!1sen!2sde" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </section>
                     </div>
                     <div class="noMobile footer"> 
                         <div class="interneLinks">
-                            <a href="#">Kontakt</a>
-                            <a href="#">Impressum</a>
-                            <a href="#">Datenschutz</a>
+                            <a href="impressum.html">Impressum</a>
+                            <a href="datenschutz.html">Datenschutz</a>
                         </div>
                         <div class="sozials">
                             <a href=""><img src="icon/sozials/004-facebook-app-logo.svg" alt="facebook"></a>
@@ -364,9 +366,8 @@
                 </article>
                 <div class="noDesktop footer"> 
                     <div class="interneLinks">
-                        <a href="#">Kontakt</a>
-                        <a href="#">Impressum</a>
-                        <a href="#">Datenschutz</a>
+                        <a href="impressum.html">Impressum</a>
+                        <a href="datenschutz.html">Datenschutz</a>
                     </div>
                     <div class="sozials">
                         <a href=""><img src="icon/sozials/004-facebook-app-logo.svg" alt="facebook"></a>
@@ -380,5 +381,6 @@
         <script src="js/jquery-3.5.1.js"></script>
         <script src="/fotorama-4.6.4/fotorama.js"></script>
         <script src="js/script.js"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+        <script src="js/cookie.js"></script>
 </html>

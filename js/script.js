@@ -110,7 +110,6 @@ function onclickEvents(){
     var icon = $(this).attr("data-id");
     $(".zieleText p").html(zielIcons[icon-1][1]);
   })
-  $(".")
 }
 function getRotationDegrees(obj) {
   var matrix = obj.css("-webkit-transform") ||
