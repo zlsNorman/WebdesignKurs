@@ -82,9 +82,11 @@
     }
     $(".sliderBlock div").on("swipeleft",function(){
         var value = $(this).attr("data-count");
-        console.log(value)
-        var translate = value+"00%";
-        $(".sliderBlock").css("transform","translateX(-"+translate+")");
+            if(sliderCount > value){
+            console.log(value)
+            var translate = value+"00%";
+            $(".sliderBlock").css("transform","translateX(-"+translate+")");
+        }
     });    
     
   </script>
