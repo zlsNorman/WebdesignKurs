@@ -494,17 +494,7 @@ picture{
     border: none;
     width: auto;
   }
-  .checkbox{
-    display: flex;
-  }
-  .checkbox span{
-    width: 6rem;
-  }
-  .checkbox input{
-    height: 1.5rem;
-    margin-left: 1rem;
-    width: 1rem;
-  }
+
   .questionsFlexButton{
     display: flex;
     justify-content: space-between;
@@ -580,6 +570,28 @@ picture{
 
 
 /* Allgemein */
+.checkBoxen{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}.checkBoxen >div{
+  display: flex;
+  flex-direction: column;
+}
+.switch {
+  width: 60px;
+  height: 24px;
+}
+.slider:before{
+  height: 16px;
+  width: 16px;
+}
+input:checked ~ .slider:before {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
 .disable {
   visibility: hidden;
   pointer-events: none;

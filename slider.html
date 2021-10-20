@@ -1,0 +1,91 @@
+<html lang="de">
+  <head>
+    <title>Slider test</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      .content {
+        width: 30rem;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+      .sliderBlock > div {
+        width: 20rem;
+        padding: 0 5rem;
+        position: absolute;
+      }
+      .sliderBlock{
+        position: relative;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="sliderBlock">
+          <div class="slider1" data-count="1">
+            <h2>1993</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium beatae dolorum dicta fugiat sequi autem in minima
+              veritatis repellendus iusto assumenda, perspiciatis est
+              reprehenderit vel enim aperiam maiores excepturi id quam quia
+              ipsum. Commodi, corrupti totam nobis quod omnis, dolor consectetur
+              officia reprehenderit modi minus cumque iste rem voluptatibus
+              quas!
+            </p>
+          </div>
+          <div class="slider2" data-count="2">
+            <h2>1994</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium beatae dolorum dicta fugiat sequi autem in minima
+              veritatis repellendus iusto assumenda, perspiciatis est
+              reprehenderit vel enim aperiam maiores excepturi id quam quia
+              ipsum. Commodi, corrupti totam nobis quod omnis, dolor consectetur
+              officia reprehenderit modi minus cumque iste rem voluptatibus
+              quas!
+            </p>
+          </div>
+          <div class="slider3" data-count="3">
+            <h2>1995</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium beatae dolorum dicta fugiat sequi autem in minima
+              veritatis repellendus iusto assumenda, perspiciatis est
+              reprehenderit vel enim aperiam maiores excepturi id quam quia
+              ipsum. Commodi, corrupti totam nobis quod omnis, dolor consectetur
+              officia reprehenderit modi minus cumque iste rem voluptatibus
+              quas!
+            </p>
+          </div>
+        </div>
+      </div>
+      <label>
+          <input type="checkbox">
+          <span>test</span>
+      </label>
+    </main>
+  </body>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script>
+    var sliderCount = $(".sliderBlock div").length;
+    for (i = 0; i < sliderCount; i++) {
+      var left = i + "00%";
+      var anzahl = i + 1;
+      $(".sliderBlock > div:nth-child(" + anzahl + ")").css("left", left);
+    }
+    $(".sliderBlock div").on("swipeleft",function(){
+        var value = $(this).attr("data-count");
+        console.log(value)
+        var translate = value+"00%";
+        $(".sliderBlock").css("transform","translateX(-"+translate+")");
+    });    
+    
+  </script>
+</html>

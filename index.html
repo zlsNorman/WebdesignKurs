@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="robots" content="noindex">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Spendenseite für das Schloss Schwepnitz"/>
+        <meta name="Keywords" content="Spenden, spende, schloss, schwepnitz "/>
         
         <link href="css/hamburgers.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styleDesktop.css" media="(min-width:701px)">
@@ -239,7 +241,7 @@
                                         Nach Eingang Ihrer Spende senden wir Ihnen ihren Dachziegel zu. Selbstverständlich können Sie von uns eine Spendenquittung erhalten. 
                                         Dachziegel gibts, solange welche vorhanden sind.
                                     </p>
-                                   <p class="einRem"><a class="sepa" href="pdf/SEPA.pdf" target="_blank">SEPA Download</a></p>
+                                   <p class="einRem noMobile"><a class="sepa" href="pdf/SEPA.pdf" target="_blank">SEPA Download</a></p>
                                 </div>
                             </section>
                         </div>
@@ -337,9 +339,21 @@
                                     <p><textarea name="Anmerkung" placeholder="Anmerkung" rows="5" required></textarea></p>
                                 </div>
                                 <div class="questionsFlexButton">
-                                <div>
-                                    <p class="checkbox textWhite"><span>Datenschutz</span> <input type="checkbox" name="dsgvo" value="true" required ></p>
-                                    <p class="checkbox textWhite"><span>AGB</span> <input type ="checkbox" name="agb" value="true" required></p>
+                                <div class="checkBoxen">
+                                    <div>
+                                        <label class="textWhite">Datenschutz</label>
+                                        <label class="switch">
+                                            <input type="checkbox" value="dsgvo">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="textWhite">AGB</label>
+                                        <label class="switch">
+                                            <input type="checkbox" value="agb">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
                                 </div>
                                 <button class="button" type="submit" value="senden">Senden</button>
                                 </div>
@@ -390,8 +404,6 @@
             navigator.userAgent.match(/Trident.*rv[ :]*11\./)
             ) {
             //This user uses Internet Explorer
-            /* window.location =
-                "https://support.microsoft.com/de-de/office/diese-website-funktioniert-nicht-in-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554?ui=de-de&rs=de-de&ad=de"; */
                 window.location = "internetExplorer.html";
             }
         </script>
