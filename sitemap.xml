@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.schloss-schwepnitz</loc>
+		<loc>https://www.schloss-schwepnitz.de.de</loc>
 		<priority>1.00</priority>
 		<lastmod>2021-10-20</lastmod>
 	</url>
 	<url>
-		<loc>https://www.schloss-schwepnitz/slider.html</loc>
+		<loc>https://www.schloss-schwepnitz.de.de/datenschutz.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2021-10-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de.de/impressum.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2021-10-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de.de/phpform</loc>
+		<priority>0.67</priority>
+		<lastmod>2021-09-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de.de/internetExplorer.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2021-10-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de.de/slider.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2021-10-20</lastmod>
 	</url>
 	<url>
-		<loc>https://www.schloss-schwepnitz/internetExplorer.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2021-10-19</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/phpform</loc>
-		<priority>0.67</priority>
-		<lastmod>2021-09-03</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/impressum.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2021-10-19</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/datenschutz.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2021-10-19</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/phpform/phpform_mailer.php</loc>
-		<priority>0.33</priority>
-		<lastmod>2021-09-03</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/phpform/phpform_error.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2021-09-03</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/phpform/phpform_dank.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2021-09-03</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/phpform/kontakt.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2021-09-03</lastmod>
-	</url>
-	<url>
-		<loc>https://www.schloss-schwepnitz/fotorama-4.6.4/example.html</loc>
+		<loc>https://www.schloss-schwepnitz.de/fotorama-4.6.4/example.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2021-10-15</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de/phpform/kontakt.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-09-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de/phpform/phpform_dank.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-09-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de/phpform/phpform_error.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-09-03</lastmod>
+	</url>
+	<url>
+		<loc>https://www.schloss-schwepnitz.de/phpform/phpform_mailer.php</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-09-03</lastmod>
 	</url>
 </urlset>
